@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
-import HeroOverlay from '@/components/sections/hero/HeroOverlay';
+import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
@@ -42,15 +42,12 @@ export default function LandingPage() {
       </div>
 
       <div id="hero" data-section="hero">
-        <HeroOverlay
+        <HeroBillboardScroll
           title="Perfectly Crafted Coffee"
           description="Discover premium, single-origin coffee roasted fresh daily. Experience the art and science of exceptional coffee."
           tag="Welcome to Brew Haven"
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765964660704-upnd5k1p.jpg"
           imageAlt="Premium espresso with latte art"
-          textPosition="bottom-left"
-          showBlur={true}
-          showDimOverlay={false}
           buttons={[
             { text: "Explore Menu", href: "menu" },
             { text: "Learn Our Story", href: "about" }
@@ -109,7 +106,6 @@ export default function LandingPage() {
           ]}
           textboxLayout="default"
           useInvertedBackground="noInvert"
-          animationType="none"
           usePrimaryButtonImage={false}
         />
       </div>
