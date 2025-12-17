@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
-import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
+import HeroShowcaseSplitOverlay from '@/components/sections/hero/HeroShowcaseSplitOverlay';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
@@ -42,16 +42,19 @@ export default function LandingPage() {
       </div>
 
       <div id="hero" data-section="hero">
-        <HeroBillboardScroll
+        <HeroShowcaseSplitOverlay
           title="Perfectly Crafted Coffee"
           description="Discover premium, single-origin coffee roasted fresh daily. Experience the art and science of exceptional coffee."
-          tag="Welcome to Brew Haven"
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765964660704-upnd5k1p.jpg"
-          imageAlt="Premium espresso with latte art"
+          tags={["Welcome", "Premium", "Handcrafted", "Sustainable"]}
+          showcaseImageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765964660704-upnd5k1p.jpg"
+          showcaseImageAlt="Premium espresso with latte art"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765964666988-ed5396er.jpg"
+          imageAlt="Brew Haven coffee shop background"
           buttons={[
             { text: "Explore Menu", href: "menu" },
             { text: "Learn Our Story", href: "about" }
           ]}
+          showDimOverlay={false}
         />
       </div>
 
@@ -76,34 +79,29 @@ export default function LandingPage() {
           tag="Our Process"
           features={[
             {
-              id: 1,
+              id: "1",
               title: "Sourcing",
-              description: "We partner with ethical farms worldwide to select the finest single-origin beans",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765964676525-ojjlyyxg.jpg",
-              imageAlt: "Single origin coffee beans"
+              description: "We partner with ethical farms worldwide to select the finest single-origin beans"
             },
             {
-              id: 2,
+              id: "2",
               title: "Roasting",
-              description: "Small-batch roasting brings out the unique flavor profile of each bean",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765964663472-tjirjldg.jpg",
-              imageAlt: "Coffee roasting process"
+              description: "Small-batch roasting brings out the unique flavor profile of each bean"
             },
             {
-              id: 3,
+              id: "3",
               title: "Brewing",
-              description: "Expert baristas craft each cup with precision and care",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765964668577-sxivkdsg.jpg",
-              imageAlt: "Professional barista making espresso"
+              description: "Expert baristas craft each cup with precision and care"
             },
             {
-              id: 4,
+              id: "4",
               title: "Enjoying",
-              description: "Savor the perfect cup in our welcoming and cozy environment",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765964666988-ed5396er.jpg",
-              imageAlt: "Cozy coffee shop atmosphere"
+              description: "Savor the perfect cup in our welcoming and cozy environment"
             }
           ]}
+          gridVariant="uniform-all-items-equal"
+          animationType="slide-up"
+          containerStyle="default"
           textboxLayout="default"
           useInvertedBackground="noInvert"
         />
