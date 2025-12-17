@@ -46,8 +46,6 @@ export default function LandingPage() {
           title="Perfectly Crafted Coffee"
           description="Discover premium, single-origin coffee roasted fresh daily. Experience the art and science of exceptional coffee."
           tag="Premium Coffee Experience"
-          showcaseImageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765964660704-upnd5k1p.jpg"
-          showcaseImageAlt="Premium espresso with latte art"
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765964666988-ed5396er.jpg"
           imageAlt="Brew Haven coffee shop background"
           buttons={[
