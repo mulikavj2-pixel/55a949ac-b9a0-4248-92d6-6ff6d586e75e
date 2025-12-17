@@ -106,7 +106,6 @@ export default function LandingPage() {
           ]}
           textboxLayout="default"
           useInvertedBackground="noInvert"
-          usePrimaryButtonImage={false}
         />
       </div>
 
