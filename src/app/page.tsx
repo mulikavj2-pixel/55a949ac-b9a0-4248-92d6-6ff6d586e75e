@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
-import HeroShowcaseSplitOverlay from '@/components/sections/hero/HeroShowcaseSplitOverlay';
+import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
@@ -42,7 +42,7 @@ export default function LandingPage() {
       </div>
 
       <div id="hero" data-section="hero">
-        <HeroShowcaseSplitOverlay
+        <HeroBillboardScroll
           title="Perfectly Crafted Coffee"
           description="Discover premium, single-origin coffee roasted fresh daily. Experience the art and science of exceptional coffee."
           tags={["Welcome", "Premium", "Handcrafted", "Sustainable"]}
@@ -79,22 +79,22 @@ export default function LandingPage() {
           tag="Our Process"
           features={[
             {
-              id: "1",
+              id: 1,
               title: "Sourcing",
               description: "We partner with ethical farms worldwide to select the finest single-origin beans"
             },
             {
-              id: "2",
+              id: 2,
               title: "Roasting",
               description: "Small-batch roasting brings out the unique flavor profile of each bean"
             },
             {
-              id: "3",
+              id: 3,
               title: "Brewing",
               description: "Expert baristas craft each cup with precision and care"
             },
             {
-              id: "4",
+              id: 4,
               title: "Enjoying",
               description: "Savor the perfect cup in our welcoming and cozy environment"
             }
