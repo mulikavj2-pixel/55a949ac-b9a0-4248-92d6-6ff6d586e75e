@@ -52,7 +52,6 @@ export default function LandingPage() {
             { text: "Explore Menu", href: "menu" },
             { text: "Learn Our Story", href: "about" }
           ]}
-          showDimOverlay={false}
         />
       </div>
 
