@@ -78,22 +78,26 @@ export default function LandingPage() {
             {
               id: 1,
               title: "Sourcing",
-              description: "We partner with ethical farms worldwide to select the finest single-origin beans"
+              description: "We partner with ethical farms worldwide to select the finest single-origin beans",
+              videoSrc: "/placeholders/placeholder1.webp"
             },
             {
               id: 2,
               title: "Roasting",
-              description: "Small-batch roasting brings out the unique flavor profile of each bean"
+              description: "Small-batch roasting brings out the unique flavor profile of each bean",
+              videoSrc: "/placeholders/placeholder1.webp"
             },
             {
               id: 3,
               title: "Brewing",
-              description: "Expert baristas craft each cup with precision and care"
+              description: "Expert baristas craft each cup with precision and care",
+              videoSrc: "/placeholders/placeholder1.webp"
             },
             {
               id: 4,
               title: "Enjoying",
-              description: "Savor the perfect cup in our welcoming and cozy environment"
+              description: "Savor the perfect cup in our welcoming and cozy environment",
+              videoSrc: "/placeholders/placeholder1.webp"
             }
           ]}
           gridVariant="uniform-all-items-equal"
